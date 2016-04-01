@@ -1,0 +1,22 @@
+<html ng-app>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="/tool.js"></script>
+  </head>
+  <body>
+    <input ng-model="name" placeholder="Type world..."> Hello {{name}}
+
+    <img src='../lame/sunset.png' />
+
+    <ul ng-controller="TodoController">
+      <li ng-repeat="todo in todos">
+        <input type="checkbox" ng-model="todo.completed">
+        {{ todo.name }}
+      </li>
+    </ul>
+
+    <script>
+
+    </script>
+  </body>
+</html>
